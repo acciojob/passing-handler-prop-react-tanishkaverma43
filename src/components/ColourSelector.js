@@ -1,4 +1,3 @@
-// ColourSelector.js
 import React from "react";
 
 function ColourSelector({ colors, onSelectColor }) {
@@ -7,6 +6,7 @@ function ColourSelector({ colors, onSelectColor }) {
       {colors.map((color, index) => (
         <button 
           key={index} 
+          data-testid={color}  // Added test ID for Cypress
           onClick={() => onSelectColor(color)} 
           style={{ margin: "5px", padding: "10px" }}
         >
