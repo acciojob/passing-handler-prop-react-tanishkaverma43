@@ -1,12 +1,20 @@
-import React from 'react';
+// ColourSelector.js
+import React from "react";
 
-const ColourSelector = (props) => {
-  const { config, selectNextBackground } = props
-  const { background } = config;
+function ColourSelector({ colors, onSelectColor }) {
   return (
-    <button className={`color-button ${background}`} onClick={() => selectNextBackground({background: background})}>
-      {/* label should come here */}
-    </button>
-  )
+    <div>
+      {colors.map((color, index) => (
+        <button 
+          key={index} 
+          onClick={() => onSelectColor(color)} 
+          style={{ margin: "5px", padding: "10px" }}
+        >
+          {color}
+        </button>
+      ))}
+    </div>
+  );
 }
+
 export default ColourSelector;
