@@ -1,9 +1,5 @@
-// Selection.js
 import React from "react";
 import "../styles/App.css";
-
-
-
 
 function Selection({ color }) {
   return (
@@ -16,4 +12,3 @@ function Selection({ color }) {
 }
 
 export default Selection;
-
