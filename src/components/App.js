@@ -1,9 +1,8 @@
-// App.js
 import React, { useState } from "react";
 import ColourSelector from "./ColourSelector";
 import Selection from "./Selection";
 
-const colors = ["red", "blue", "green"];
+const colors = ["red", "blue", "green", "orange"]; // Added 'orange'
 
 function App() {
   const [selectedColor, setSelectedColor] = useState("");
@@ -22,4 +21,3 @@ function App() {
 }
 
 export default App;
-
